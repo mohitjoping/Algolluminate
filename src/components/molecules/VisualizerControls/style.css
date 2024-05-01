@@ -1,0 +1,67 @@
+/* BLOCK */
+.VisualizerControls {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 0;
+  
+}
+
+/* ELEMENT */
+.VisualizerControls__CenterButton {
+  height: 4rem;
+  width: 6rem;
+  padding: 0;
+  border-radius: 18px;
+  background-color: var(--primary-light);
+}
+
+/* .VisualizerControls__CenterButton:disabled {
+  background-color: var(--gray-500);
+} */
+
+.VisualizerControls__Button {
+  height: 2rem;
+  width: 1rem;
+  padding: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 18px;
+  /* color: var(--primary-light); */
+  background-color: var(--primary-light);
+}
+
+/* .VisualizerControls__Button:disabled {
+  background-color: var(--gray-500);
+} */
+
+
+.VisualizerControls__SpeedButton {
+  width: 4rem;
+  border: 1px solid rgb(54, 54, 54);
+  border-radius: 15px;
+  padding-left:0vh;
+  margin-left:20px;
+  background-color: var(--background-color-5);
+  
+}
+
+
+.VisualizerControls__Icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 0;
+  color: #dfe1e3;
+}
+
+@media (max-width: 600px) {
+  /* Adjust padding for smaller screens */
+  .VisualizerControls {
+    padding: 1rem;
+  }
+
+  /* Adjust margin for smaller screens */
+  .VisualizerControls__Button {
+    margin-left: 1px; /* Further decreased margin */
+    margin-right: 1px; /* Further decreased margin */
+  }
+}
