@@ -1,0 +1,1 @@
+Algolluminate is a sorting visualizer mini project.
