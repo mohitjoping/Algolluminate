@@ -70,14 +70,14 @@ const VisualizerControls = ({
         className="VisualizerControls__CenterButton"
       />
 
-      {/* Forward Button 
+      {/* Forward Button  */}
       <Button
         icon={Forward}
         onClick={onForward}
         disabled={isDisabled(onForward, forwardDisabled)}
         iconClass="VisualizerControls__Icon"
         className="VisualizerControls__Button"
-      /> */}
+      />
       <Button
         icon={Forward}
         onClick={onForward}
@@ -86,19 +86,17 @@ const VisualizerControls = ({
         className="VisualizerControls__Button"
       />
       {/* Playback Speed */}
-      <div>
-        <Menu
-          items={["0.25x", "0.5x", "1x", "2x", "4x"]}
-          placeholder="Speed"
-          selected={`${playbackSpeed}x`}
-          onClick={onAdjustSpeed}
-          noDropIcon
-          iconClass="VisualizerControls__Icon"
-          className="VisualizerControls__SpeedButton"
-          
-        />
+      
+      <Menu
+        items={['0.25x', '0.5x', '1x', '2x', '4x']}
+        placeholder="Speed"
+        selected={`${playbackSpeed}x`}
+        onSelect={onAdjustSpeed}
+        noDropIcon
+        className="VisualizerControls__SpeedButton"
+      />
         
-      </div>
+      
     </div>
   );
 };

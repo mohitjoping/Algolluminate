@@ -154,7 +154,6 @@ class SortVisualizer extends Component {
       if (playing) this.continue();
     });
   };
-
   render() {
     return (
       <div className="SortVisualizer">
